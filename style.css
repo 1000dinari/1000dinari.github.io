@@ -1,7 +1,7 @@
 #shakal {
 	border: 2px solid lightblue;
 	border-radius: 18px;
-	width: 190px;
+	width: 12%;
 	float: left;
 	padding: 2px;
 	margin-right:10px;
@@ -10,18 +10,18 @@
 #name {
 	padding-left: 5px;
 	color: #006700;
-	margin: 0px;
+	margin: 5px;
 	/* float: middle; */
-	font-size: 50px;
+	font-size: 300%;
+	width: auto;
 }
 
 #interests {
 	color: #009a00;
 	margin: 10px;
-	padding: 1px;
 	width: auto;
 	/* float: middle; */
-	font-size: 28px;
+	font-size: 180%;
 }
 
 #intro {
@@ -31,15 +31,11 @@
 	width: auto;
 	/* float: middle; */
 	font-size: 15px;
-	padding-bottom: 25px;
+	padding-bottom: 1%;
 }
 
 #github, #linkedin, th {
 	height: 20px;
-}
-
-#links {
-	float: middle;
 }
 
 a {
@@ -53,7 +49,7 @@ a {
 	border: 1px solid green;
 	width: 48%;
 	float: left;
-	margin: 5px;
+	margin-bottom: 10px;	
 }
 
 #bigr {
@@ -61,7 +57,7 @@ a {
 	border: 1px solid green;
 	width: 48%;
 	float: right;
-	margin: 5px;
+	margin-bottom: 10px;
 }
 
 #heading {
@@ -69,6 +65,7 @@ a {
 	font-weight: bold;
 	margin: 0px;
 	color: #009a00;
+	width: 25%;
 }
 
 #element {
@@ -80,6 +77,7 @@ a {
 	font-weight: normal;
 	margin: 0px;
 	color: #009a00;
+	width: 90%;
 }
 
 #details {
