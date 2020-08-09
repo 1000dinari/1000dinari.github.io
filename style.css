@@ -1,0 +1,119 @@
+#shakal {
+	border: 2px solid lightblue;
+	border-radius: 18px;
+	width: 190px;
+	float: left;
+	padding: 2px;
+	margin-right:10px;
+}
+
+#name {
+	padding-left: 5px;
+	color: #006700;
+	margin: 0px;
+	/* float: middle; */
+	font-size: 50px;
+}
+
+#interests {
+	color: #009a00;
+	margin: 10px;
+	padding: 1px;
+	width: auto;
+	/* float: middle; */
+	font-size: 28px;
+}
+
+#intro {
+	color: #00cc66;
+	margin: 10px;
+	padding: 10px;
+	width: auto;
+	/* float: middle; */
+	font-size: 15px;
+	padding-bottom: 25px;
+}
+
+#github, #linkedin, th {
+	height: 20px;
+}
+
+#links {
+	float: middle;
+}
+
+a {
+	color: black;
+	text-decoration: underline overline black;
+}
+
+
+#bigl {
+	padding: 5px;
+	border: 1px solid green;
+	width: 48%;
+	float: left;
+	margin: 5px;
+}
+
+#bigr {
+	padding: 5px;
+	border: 1px solid green;
+	width: 48%;
+	float: right;
+	margin: 5px;
+}
+
+#heading {
+	font-size: 45px;
+	font-weight: bold;
+	margin: 0px;
+	color: #009a00;
+}
+
+#element {
+	padding: 5px;
+}
+
+#titles {
+	font-size: 28px;
+	font-weight: normal;
+	margin: 0px;
+	color: #009a00;
+}
+
+#details {
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0px;
+	color: #00cc00;
+}
+
+#duration {
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0px;
+	color: #009a00;
+}
+
+#score {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px;
+	color: black;
+}
+
+ul#bubbles li {
+	color: white;
+	float: left;
+	background-color: green;
+	display:inline;
+	border: 3px solid green;
+	border-radius: 2px;
+	margin: 2px;
+	margin-bottom: 5px;
+}
+
+body { 
+	background-color: #faebd7
+}
