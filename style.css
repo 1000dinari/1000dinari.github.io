@@ -47,7 +47,7 @@ a {
 #bigl {
 	padding: 5px;
 	border: 1px solid green;
-	width: 48%;
+	width: 43%;
 	float: left;
 	margin-bottom: 10px;	
 }
@@ -55,7 +55,7 @@ a {
 #bigr {
 	padding: 5px;
 	border: 1px solid green;
-	width: 48%;
+	width: 43%;
 	float: right;
 	margin-bottom: 10px;
 }
