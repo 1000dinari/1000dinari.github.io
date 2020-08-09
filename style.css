@@ -12,16 +12,16 @@
 	color: #006700;
 	margin: 5px;
 	/* float: middle; */
-	font-size: 300%;
+	height: 8%;
 	width: auto;
 }
 
 #interests {
 	color: #009a00;
-	margin: 10px;
+	margin: 5px;
 	width: auto;
 	/* float: middle; */
-	font-size: 180%;
+	height: 5%;
 }
 
 #intro {
@@ -30,7 +30,7 @@
 	padding: 10px;
 	width: auto;
 	/* float: middle; */
-	font-size: 15px;
+	height: 3%;
 	padding-bottom: 1%;
 }
 
@@ -47,7 +47,7 @@ a {
 #bigl {
 	padding: 5px;
 	border: 1px solid green;
-	width: 43%;
+	width: 48%;
 	float: left;
 	margin-bottom: 10px;	
 }
@@ -55,7 +55,7 @@ a {
 #bigr {
 	padding: 5px;
 	border: 1px solid green;
-	width: 43%;
+	width: 49%;
 	float: right;
 	margin-bottom: 10px;
 }
@@ -65,7 +65,7 @@ a {
 	font-weight: bold;
 	margin: 0px;
 	color: #009a00;
-	width: 25%;
+	max-width: 50%;
 }
 
 #element {
