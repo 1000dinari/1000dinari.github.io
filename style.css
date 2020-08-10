@@ -169,7 +169,7 @@ ul#longlist li {
 }
 
 body { 
-	background-color: #e6e6e6;
+	background-color: white;
 	width: 100vw;
 }
 
@@ -179,13 +179,12 @@ body {
 #shakal { width: 15vw;}
 	#bigr, #bigl {
 		float: left;
-		margin-left: 2px;
-		margin-right: 2px;
+		margin-left: 2vw;
+		margin-right: 2vw;
 		padding: 5px;
 		border: 1px solid green;
-		min-width: 90%;
+		width: 96vw;
 		margin-bottom: 10px;
-		width: 97%;
 	}
 
 #maill, #githubb, #linkedinn {
