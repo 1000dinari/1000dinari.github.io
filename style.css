@@ -1,34 +1,36 @@
 #shakal {
+	margin:1vh;
 	border: 2px solid lightblue;
 	border-radius: 18px;
 	width: 12%;
 	float: left;
-	padding: 2px;
-	margin-right:10px;
+	padding: 0.3vh;
+	margin-right:1vw;
 }
 
 #name {
+	font-size: 9vh;	
 	color: #2b2e8a;
-	margin: 10px;
-	height: 8%;
+	margin: 1vh;
 	width: auto;
 }
 
 #interests {
 	font-weight: lighter;
 	color: #31349d;
-	margin: 5px;
+	margin: 1vh;
 	width: auto;
-	height: 5%;
+	max-width: 90vw;
+	font-size: 4vh;
 }
 
 #intro {
+	
+	font-size: 3vh;
 	color: black;
 	margin: 5px;
-	padding: 10px;
 	width: auto;
-	height: 3%;
-	padding-bottom: 1%;
+	padding-bottom: 5vh;
 }
 
 table {
@@ -49,16 +51,16 @@ table#links td {
 	margin-bottom: 5px;
 }
 
-#lk { text-align: left; font-size: 14px;}
+#lk { text-align: left; font-size: 13px;}
 
 #break { display: none;}
 
 #mail, #github, #linkedin {margin-right: 5px;height: 20px;}
 
 #maill, #githubb, #linkedinn { 
-		border:10px solid #7dd4a4; 
+		border:10px solid #9a9aff; 
 		border-radius:8px;
-		background-color:#7dd4a4; 
+		background-color:#9a9aff; 
 }
 
 #proj {
@@ -73,8 +75,10 @@ table#links td {
 	border: 1px solid #000185;
 	width: 48%;
 	float: left;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	clear: left;
 }
+
 
 #bigr {
 	margin-right:0.5%;
@@ -83,44 +87,45 @@ table#links td {
 	width: 48%;
 	float: right;
 	margin-bottom: 10px;
+	clear: right;
 }
 
 #heading {
-	font-size: 45px;
-	font-weight: bold;
+	font-size: 6vh;
+	font-weight: normal;
 	margin: 0px;
-	color: #005351;
+	color: #0000b3;
 	max-width: 50%;
 }
 
 #element {
-	padding: 5px;
+	margin-top: 5px;
 }
 
 #titles {
-	font-size: 28px;
-	font-weight: normal;
+	font-size: 4vh;
+	font-weight: 50;
 	margin: 0px;
-	color: #009a00;
-	width: 90%;
+	color: #0000cd;
+	max-width: 90%;
 }
 
 #details {
-	font-size: 25px;
+	font-size: 3vh;
 	font-weight: normal;
 	margin: 0px;
-	color: #00cc00;
+	color: #0101ff;
 }
 
 #duration {
-	font-size: 13px;
-	font-weight: normal;
+	font-size: 2vh;
+	font-weight: lighter;
 	margin: 0px;
-	color: #009a00;
+	color: grey;
 }
 
 #score {
-	font-size: 15px;
+	font-size: 2.3vh;
 	font-weight: bold;
 	margin: 0px;
 	color: black;
@@ -129,23 +134,49 @@ table#links td {
 ul#bubbles li {
 	color: white;
 	float: left;
-	background-color: green;
+	background-color: #1919ff;
 	display:inline;
-	border: 3px solid green;
+	border: 3px solid #1919ff;
 	border-radius: 2px;
 	margin: 2px;
 	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+ul#longbubbles li {
+	color: white;
+	display: inline;
+	float: left;
+	list-style-type: ;
+	background-color: #1919ff;
+	border: 3px solid #1919ff;
+	border-radius: 2px;
+	margin: 2px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+ul#longlist li {
+	font-weight: bold;
+
+}
+
+#pexp {
+	font-size: 2.5vh;
+	font-weight: normal;
+	margin: 0px;
+	color: black;
 }
 
 body { 
-	background-color: #ecf3f9;
+	background-color: #e6e6e6;
 	width: 100vw;
 }
 
 @media (max-width: 800px)
 {
 
-#shakal { width: 33%;}
+#shakal { width: 15vw;}
 	#bigr, #bigl {
 		float: left;
 		margin-left: 2px;
