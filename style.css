@@ -85,6 +85,7 @@ height: 20px; margin-left: 150px;
 
 #bigl {
 	padding-left: 1%;
+	padding-right: 1%;
 	border: 1px solid green;
 	width: 48%;
 	float: left;
