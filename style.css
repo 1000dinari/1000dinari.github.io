@@ -34,8 +34,24 @@
 	padding-bottom: 1%;
 }
 
-#github, #linkedin, th {
-	height: 20px;
+ul#links li {
+width: 100%;
+display: inline;
+}
+
+#github {
+	height: 10px;	
+	//align: center;
+}
+
+#mail {
+	height: 10px;
+	//float: left;
+}
+
+#linkedin {
+	height: 10px;
+	//float: right;
 }
 
 a {
@@ -113,5 +129,39 @@ ul#bubbles li {
 }
 
 body { 
-	background-color: #faebd7
+	background-color: #faebd7;
+	width: 100%;
+}
+
+@media (max-width: 600px){
+
+	#bigr {
+		margin: 2px;
+		padding: 5px;
+		border: 1px solid green;
+		min-width: 90%;
+		align: center;
+		margin-bottom: 10px;
+		max-width: 98%;
+		width: auto;
+	}
+
+	#bigl {
+		margin: 2px;
+		padding: 5px;
+		border: 1px solid green;
+		min-width: 90%;
+		align: center;
+		margin-bottom: 10px;	
+		width: auto;
+		max-width: 98%;
+	}
+
+	ul#links li {
+	clear: both;
+	}
+	
+	#mail, #linkedin #github {
+		clear: right;
+	}
 }
