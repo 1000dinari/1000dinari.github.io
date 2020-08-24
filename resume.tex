@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[1]{      % Same as \PersonalEntry
+		\noindent #1 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent \hangindent=2em\hangafter=0 \small #4 % result
+		\normalsize \par}
+		
+\newcommand{\ProjectsEntry}[3]{
+		\noindent \textbf{#1} \hfill  \par    % name
+		\noindent \small #2 \par % Description
+		\noindent \small #3 \par % link
+		\normalsize \par}
+
+
+\newcommand{\WorkEntry}[2]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill   \par   % Jobname
+%		\colorbox{Black}{\color{White}#2} \par  % Duration
+%		\noindent \textit{#3} \par              % Company
+		\noindent \hangindent=2em\hangafter=0 \small #2 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Saurabh Chaudhary}
+\MySlogan{Curriculum Vitae}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Birth}{Sepember 12, 2020}
+%\PersonalEntry{Address}{111 First St, New York}
+%\PersonalEntry{Phone}{(123) 000-0000}
+\PersonalEntry{Mail}{\url{saurabhkinha@gmail.com}}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{B.TECH IN ELECTRONICS AND COMPUTERS}{2019-current}{Thapar Institute of Engineering and Technology, Patiala}{GPA : 7.8}
+\sepspace
+
+\EducationEntry{HIGHER SECONDARY EDUCATION}{2016-2018}{G.M.S.S.S - 16, Chandigarh}{Percentage : 89\%}
+\sepspace
+
+\EducationEntry{SECONDARY EDUCATION}{2003-2016}{Saupin's School, Chandigarh}{GPA : 10}
+
+
+%%% Projects
+%%% ------------------------------------------------------------
+\NewPart{Projects}{}
+
+\ProjectsEntry{sLARBS}{A LARBS-like set of scripts to save a backup of all installed packages and their config/dotfiles from an arch linux or arch linux based distribution to a git repository, and to download and install those onto a new system in a very small amount of time and effort.}{Link : github.com/1000dinari/arch}
+\sepspace
+
+\ProjectsEntry{Personalized DWM configuration}{A personalized configuration of the tiling window manager dwm, developed by suckless.org, written in C. Every user is supposed to edit their preferences directly into the source code and compile the program on their own.}{Link : https://github.com/1000dinari/arch/tree/master/dwm-6.2}
+\sepspace
+
+\ProjectsEntry{CSFDD}{A book I'm currently writing on computers which dives into hardware, software, virtual machines, linux and android.}{Link : Coming soon}
+\newpage
+
+%%% Experience
+%%% ------------------------------------------------------------
+\NewPart{Experience}{}
+
+\WorkEntry{3 years of experience with linux }{Familiarity with the gnu/linux system, the filesystem incorporated, init systems and cronjobs, and basic system management for servers running linux/bsd.}
+\sepspace
+
+\WorkEntry{3 years of experience with bash }{Experience in bash scripting and using the command line for all tasks in regular computing, automation of mundane veryday tasks through scripts.}
+\sepspace
+
+\WorkEntry{4 years of experience with C/C++ }{Experience in hacking on and maintaining the dwm window manager for GUI}
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\SkillsEntry{Bash Scripting}
+\SkillsEntry{Linux System Management}
+\SkillsEntry{Web Developement}
+\SkillsEntry{Content Writing}
+\SkillsEntry{Oration/Public Speaking}
+\SkillsEntry{Problem Solving}
+
+
+
+%%% Languages
+%%% ------------------------------------------------------------
+\NewPart{Languages}{}
+\SkillsEntry{Bash}
+\SkillsEntry{HTML}
+\SkillsEntry{CSS}
+\SkillsEntry{C}
+\SkillsEntry{C++}
+\SkillsEntry{JavaScript}
+
+%%% Accomplishments
+%%% ------------------------------------------------------------
+\NewPart{Accomplishments}{}
+\SkillsEntry{Ranked 20th Internationally in the SOF International English Olympiad}
+\SkillsEntry{Scored 100 percentile in Science in ASSET 2014}
+\SkillsEntry{Scored 91.2 percentie in NGSE Mains 2015}
+
+%%% Interests
+%%% ------------------------------------------------------------
+\NewPart{Interests}{}
+\SkillsEntry{History}
+\SkillsEntry{Literature}
+\SkillsEntry{Gaming}
+\SkillsEntry{Racing}
+\SkillsEntry{Contemporary poetry}
+\SkillsEntry{FOSS Software}
+\SkillsEntry{Astronomy}
+  
+
+\end{document}
